@@ -84,6 +84,9 @@ nav.solid{background:rgba(247,244,236,.9);backdrop-filter:blur(12px);box-shadow:
 @keyframes tickerLTR{0%{transform:translateX(-50%)}100%{transform:translateX(0)}}
 .hero-in{position:relative;z-index:2;max-width:900px}
 .hero .eyebrow{display:inline-block;font-family:'Montserrat',sans-serif;font-size:.88rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--red);margin-bottom:28px}
+.eyebrow-date{display:inline-flex;align-items:center;gap:7px;margin-left:12px;padding:4px 12px;border-radius:30px;background:var(--red);color:#fff;letter-spacing:.1em}
+.eyebrow-date::before{content:"";width:6px;height:6px;border-radius:50%;background:#fff;opacity:.9}
+@media(max-width:680px){.eyebrow-date{display:flex;margin-left:0;margin-top:10px;width:fit-content}}
 .hero-brand{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(4.5rem,14vw,9.5rem);line-height:.92;margin-bottom:20px;letter-spacing:-.03em}
 .hero-brand .dot{color:var(--red)}
 .hero-tagline{font-family:'Playfair Display',serif;font-size:clamp(1.3rem,3vw,1.9rem);color:var(--ink-soft);margin-bottom:24px;letter-spacing:-.01em}
@@ -403,7 +406,7 @@ footer p{font-size:.85rem}
     <div class="ticker-row r5"><div class="ticker-track"><span class="ticker-word">natural</span><span class="ticker-sep">·</span><span class="ticker-word">precise</span><span class="ticker-sep">·</span><span class="ticker-word">vivid</span><span class="ticker-sep">·</span><span class="ticker-word">sharp</span><span class="ticker-sep">·</span><span class="ticker-word">articulate</span><span class="ticker-sep">·</span><span class="ticker-word">fluent</span><span class="ticker-sep">·</span><span class="ticker-word">natural</span><span class="ticker-sep">·</span><span class="ticker-word">precise</span><span class="ticker-sep">·</span><span class="ticker-word">vivid</span><span class="ticker-sep">·</span><span class="ticker-word">sharp</span><span class="ticker-sep">·</span><span class="ticker-word">articulate</span><span class="ticker-sep">·</span><span class="ticker-word">fluent</span><span class="ticker-sep">·</span></div></div>
   </div>
   <div class="wrap hero-in">
-    <div class="eyebrow">Закрытая Telegram-подписка от @katya.proeng</div>
+     <div class="eyebrow">Закрытая Telegram-подписка от @katya.proeng<span class="eyebrow-date">Старт 5 октября</span></div>
     <h1 class="hero-brand">Well Said<span class="dot">.</span></h1>
     <p class="hero-tagline">Sound like yourself. In English.</p>
     <p class="hero-sub">Вы уже говорите по-английски — но пора звучать на нём так же <b>интересно, точно и естественно,</b> как на родном языке.</p>
@@ -649,7 +652,7 @@ footer p{font-size:.85rem}
   <div class="wrap">
     <div class="wl-grid">
       <div class="wl-left">
-        <div class="wl-badge reveal"><span></span>Скоро запуск</div>
+                <div class="wl-badge reveal"><span></span>Старт 5 октября</div>
         <h2 class="wl-title reveal d1">Well Said ещё не открыт.<br>Но вы можете быть <em>первыми.</em></h2>
         <p class="wl-desc reveal d2">Оставьте имя и ник в Telegram — и вы узнаете о старте раньше всех, вместе с приглашением на бесплатную первую неделю.</p>
         <ul class="wl-perks reveal d2">
